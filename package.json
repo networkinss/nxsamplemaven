@@ -2,7 +2,10 @@
   "name": "@nxmavensample/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "build": "nx affected --parallel=2 --verbose=false --target=build",
+    "all": "nx run-many --parallel=2 --verbose=false --target=build"
+  },
   "private": true,
   "dependencies": {
     "react": "18.3.1",

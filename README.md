@@ -58,6 +58,8 @@ Building only parent, while mvn package builds also sub-module springservice.
 
 ### Add a maven library:
 nx generate @jnxplus/nx-maven:library mavenlib1 --javaVersion 17 --groupId ch.inss --directory libs
+`nx run-many --parallel=2 --verbose=false --target=build`
+
 nx generate @jnxplus/nx-maven:library mavenlib2 --javaVersion 17 --groupId ch.inss --directory libs
 
 ## Integrate with editors
