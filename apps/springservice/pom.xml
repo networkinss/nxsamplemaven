@@ -1,19 +1,22 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<groupId>ch.inss</groupId>
-	<artifactId>springservice</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>springservice</name>
-	<description>This project was generated with nx-maven</description>
+<?xml version="1.0" encoding="UTF-8" ?>
+<project
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd"
+>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>ch.inss</groupId>
+  <artifactId>springservice</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>springservice</name>
+  <description>This project was generated with nx-maven</description>
 
   <parent>
-		<groupId>ch.inss</groupId>
-		<artifactId>nxsampleparent</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+    <groupId>ch.inss</groupId>
+    <artifactId>nxsampleparent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
     <relativePath>../../pom.xml</relativePath>
-	</parent>
+  </parent>
 
   <dependencies>
     <dependency>
@@ -40,5 +43,4 @@
       </plugin>
     </plugins>
   </build>
-
 </project>
