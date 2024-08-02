@@ -4,18 +4,22 @@
 pnpx create-nx-workspace@latest apifox --preset=react-monorepo
 
 ### Maven Plugin
-Just once install and init:
-pnpm install --save-dev @jnxplus/nx-maven
+
+Just once install and init:  
+pnpm install --save-dev @jnxplus/nx-maven  
 nx generate @jnxplus/nx-maven:init
-Result:
+Result:  
 `nx show projects`
-samplereact-e2e
-samplereact
+samplereact-e2e  
+samplereact  
 nxsampleparent
 
 ### Add a maven application:
-nx generate @jnxplus/nx-maven:application springservice --javaVersion 17 --groupId ch.inss --language java --framework spring-boot --directory apps
+
+`nx generate @jnxplus/nx-maven:application springservice --javaVersion 17 --groupId ch.inss --language java --framework spring-boot --directory apps`  
 Stdout:
+
+```bash
 Could not format pom.xml. Error: "require() of ES Module /home/amrit/WebstormProjects/nx/maven/nxmavensample/node_modules/.pnpm/@prettier+plugin-xml@3.4.1_prettier@2.8.8/node_modules/@prettier/plugin-xml/src/plugin.js from /home/amrit/WebstormProjects/nx/maven/nxmavensample/node_modules/.pnpm/prettier@2.8.8/node_modules/prettier/index.js not supported.
 Instead change the require of plugin.js in /home/amrit/WebstormProjects/nx/maven/nxmavensample/node_modules/.pnpm/prettier@2.8.8/node_modules/prettier/index.js to a dynamic import() which is available in all CommonJS modules."
 Could not format apps/springservice/project.json. Error: "require() of ES Module /home/amrit/WebstormProjects/nx/maven/nxmavensample/node_modules/.pnpm/@prettier+plugin-xml@3.4.1_prettier@2.8.8/node_modules/@prettier/plugin-xml/src/plugin.js from /home/amrit/WebstormProjects/nx/maven/nxmavensample/node_modules/.pnpm/prettier@2.8.8/node_modules/prettier/index.js not supported.
@@ -43,24 +47,25 @@ CREATE apps/springservice/src/test/java/ch/inss/springservice/HelloControllerTes
 CREATE apps/springservice/src/test/java/ch/inss/springservice/SpringserviceApplicationTests.java
 CREATE apps/springservice/src/test/resources/application.yml
 UPDATE pom.xml
+```
 
-`nx show projects`
-samplereact-e2e
-springservice
-samplereact
+`nx show projects`  
+samplereact-e2e  
+springservice  
+samplereact  
 nxsampleparent
 
-`nx build springservice`
+`nx build springservice`  
 Building target folder as expected.
 
-`nx build nxsampleparent`
+`nx build nxsampleparent`  
 Building only parent, while mvn package builds also sub-module springservice.
 
 ### Add a maven library:
-nx generate @jnxplus/nx-maven:library mavenlib1 --javaVersion 17 --groupId ch.inss --directory libs
-`nx run-many --parallel=2 --verbose=false --target=build`
 
-nx generate @jnxplus/nx-maven:library mavenlib2 --javaVersion 17 --groupId ch.inss --directory libs
+nx generate @jnxplus/nx-maven:library mavenlib1 --javaVersion 17 --groupId ch.inss --directory libs  
+nx generate @jnxplus/nx-maven:library mavenlib2 --javaVersion 17 --groupId ch.inss --directory libs  
+`nx run-many --parallel=2 --verbose=false --target=build`
 
 ## Integrate with editors
 
