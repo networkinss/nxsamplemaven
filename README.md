@@ -17,7 +17,6 @@ nxsampleparent
 ### Add a maven application:
 
 `nx generate @jnxplus/nx-maven:application springservice --javaVersion 17 --groupId ch.inss --language java --framework spring-boot --directory apps`  
-Stdout:
 
 `nx show projects`  
 samplereact-e2e  
