@@ -6,9 +6,7 @@
   "targets": {
     "build": {
       "executor": "@jnxplus/nx-maven:run-task",
-      "outputs": [
-        "{projectRoot}/target"
-      ],
+      "outputs": ["{projectRoot}/target"],
       "options": {
         "task": "package spring-boot:repackage -DskipTests=true"
       }
@@ -24,18 +22,14 @@
       "options": {
         "task": "spring-boot:run"
       },
-      "dependsOn": [
-        "^build"
-      ]
+      "dependsOn": ["^build"]
     },
     "test": {
       "executor": "@jnxplus/nx-maven:run-task",
       "options": {
         "task": "test"
       },
-      "dependsOn": [
-        "^build"
-      ]
+      "dependsOn": ["^build"]
     }
   },
   "tags": []
