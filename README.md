@@ -19,36 +19,6 @@ nxsampleparent
 `nx generate @jnxplus/nx-maven:application springservice --javaVersion 17 --groupId ch.inss --language java --framework spring-boot --directory apps`  
 Stdout:
 
-```bash
-Could not format pom.xml. Error: "require() of ES Module /home/amrit/WebstormProjects/nx/maven/nxmavensample/node_modules/.pnpm/@prettier+plugin-xml@3.4.1_prettier@2.8.8/node_modules/@prettier/plugin-xml/src/plugin.js from /home/amrit/WebstormProjects/nx/maven/nxmavensample/node_modules/.pnpm/prettier@2.8.8/node_modules/prettier/index.js not supported.
-Instead change the require of plugin.js in /home/amrit/WebstormProjects/nx/maven/nxmavensample/node_modules/.pnpm/prettier@2.8.8/node_modules/prettier/index.js to a dynamic import() which is available in all CommonJS modules."
-Could not format apps/springservice/project.json. Error: "require() of ES Module /home/amrit/WebstormProjects/nx/maven/nxmavensample/node_modules/.pnpm/@prettier+plugin-xml@3.4.1_prettier@2.8.8/node_modules/@prettier/plugin-xml/src/plugin.js from /home/amrit/WebstormProjects/nx/maven/nxmavensample/node_modules/.pnpm/prettier@2.8.8/node_modules/prettier/index.js not supported.
-Instead change the require of plugin.js in /home/amrit/WebstormProjects/nx/maven/nxmavensample/node_modules/.pnpm/prettier@2.8.8/node_modules/prettier/index.js to a dynamic import() which is available in all CommonJS modules."
-Could not format apps/springservice/pom.xml. Error: "require() of ES Module /home/amrit/WebstormProjects/nx/maven/nxmavensample/node_modules/.pnpm/@prettier+plugin-xml@3.4.1_prettier@2.8.8/node_modules/@prettier/plugin-xml/src/plugin.js from /home/amrit/WebstormProjects/nx/maven/nxmavensample/node_modules/.pnpm/prettier@2.8.8/node_modules/prettier/index.js not supported.
-Instead change the require of plugin.js in /home/amrit/WebstormProjects/nx/maven/nxmavensample/node_modules/.pnpm/prettier@2.8.8/node_modules/prettier/index.js to a dynamic import() which is available in all CommonJS modules."
-Could not format apps/springservice/src/main/resources/application.yml. Error: "require() of ES Module /home/amrit/WebstormProjects/nx/maven/nxmavensample/node_modules/.pnpm/@prettier+plugin-xml@3.4.1_prettier@2.8.8/node_modules/@prettier/plugin-xml/src/plugin.js from /home/amrit/WebstormProjects/nx/maven/nxmavensample/node_modules/.pnpm/prettier@2.8.8/node_modules/prettier/index.js not supported.
-Instead change the require of plugin.js in /home/amrit/WebstormProjects/nx/maven/nxmavensample/node_modules/.pnpm/prettier@2.8.8/node_modules/prettier/index.js to a dynamic import() which is available in all CommonJS modules."
-Could not format apps/springservice/src/test/resources/application.yml. Error: "require() of ES Module /home/amrit/WebstormProjects/nx/maven/nxmavensample/node_modules/.pnpm/@prettier+plugin-xml@3.4.1_prettier@2.8.8/node_modules/@prettier/plugin-xml/src/plugin.js from /home/amrit/WebstormProjects/nx/maven/nxmavensample/node_modules/.pnpm/prettier@2.8.8/node_modules/prettier/index.js not supported.
-Instead change the require of plugin.js in /home/amrit/WebstormProjects/nx/maven/nxmavensample/node_modules/.pnpm/prettier@2.8.8/node_modules/prettier/index.js to a dynamic import() which is available in all CommonJS modules."
-Could not format apps/springservice/src/main/java/ch/inss/springservice/HelloController.java. Error: "require() of ES Module /home/amrit/WebstormProjects/nx/maven/nxmavensample/node_modules/.pnpm/@prettier+plugin-xml@3.4.1_prettier@2.8.8/node_modules/@prettier/plugin-xml/src/plugin.js from /home/amrit/WebstormProjects/nx/maven/nxmavensample/node_modules/.pnpm/prettier@2.8.8/node_modules/prettier/index.js not supported.
-Instead change the require of plugin.js in /home/amrit/WebstormProjects/nx/maven/nxmavensample/node_modules/.pnpm/prettier@2.8.8/node_modules/prettier/index.js to a dynamic import() which is available in all CommonJS modules."
-Could not format apps/springservice/src/main/java/ch/inss/springservice/SpringserviceApplication.java. Error: "require() of ES Module /home/amrit/WebstormProjects/nx/maven/nxmavensample/node_modules/.pnpm/@prettier+plugin-xml@3.4.1_prettier@2.8.8/node_modules/@prettier/plugin-xml/src/plugin.js from /home/amrit/WebstormProjects/nx/maven/nxmavensample/node_modules/.pnpm/prettier@2.8.8/node_modules/prettier/index.js not supported.
-Instead change the require of plugin.js in /home/amrit/WebstormProjects/nx/maven/nxmavensample/node_modules/.pnpm/prettier@2.8.8/node_modules/prettier/index.js to a dynamic import() which is available in all CommonJS modules."
-Could not format apps/springservice/src/test/java/ch/inss/springservice/SpringserviceApplicationTests.java. Error: "require() of ES Module /home/amrit/WebstormProjects/nx/maven/nxmavensample/node_modules/.pnpm/@prettier+plugin-xml@3.4.1_prettier@2.8.8/node_modules/@prettier/plugin-xml/src/plugin.js from /home/amrit/WebstormProjects/nx/maven/nxmavensample/node_modules/.pnpm/prettier@2.8.8/node_modules/prettier/index.js not supported.
-Instead change the require of plugin.js in /home/amrit/WebstormProjects/nx/maven/nxmavensample/node_modules/.pnpm/prettier@2.8.8/node_modules/prettier/index.js to a dynamic import() which is available in all CommonJS modules."
-Could not format apps/springservice/src/test/java/ch/inss/springservice/HelloControllerTests.java. Error: "require() of ES Module /home/amrit/WebstormProjects/nx/maven/nxmavensample/node_modules/.pnpm/@prettier+plugin-xml@3.4.1_prettier@2.8.8/node_modules/@prettier/plugin-xml/src/plugin.js from /home/amrit/WebstormProjects/nx/maven/nxmavensample/node_modules/.pnpm/prettier@2.8.8/node_modules/prettier/index.js not supported.
-Instead change the require of plugin.js in /home/amrit/WebstormProjects/nx/maven/nxmavensample/node_modules/.pnpm/prettier@2.8.8/node_modules/prettier/index.js to a dynamic import() which is available in all CommonJS modules."
-CREATE apps/springservice/project.json
-CREATE apps/springservice/pom.xml
-CREATE apps/springservice/src/main/java/ch/inss/springservice/HelloController.java
-CREATE apps/springservice/src/main/java/ch/inss/springservice/SpringserviceApplication.java
-CREATE apps/springservice/src/main/resources/application.yml
-CREATE apps/springservice/src/test/java/ch/inss/springservice/HelloControllerTests.java
-CREATE apps/springservice/src/test/java/ch/inss/springservice/SpringserviceApplicationTests.java
-CREATE apps/springservice/src/test/resources/application.yml
-UPDATE pom.xml
-```
-
 `nx show projects`  
 samplereact-e2e  
 springservice  
